@@ -1,0 +1,533 @@
+[
+  {
+    "id": 1,
+    "question": "What is SQL?",
+    "type": "single_select",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "System Query Language",
+      "Standard Query Language"
+    ],
+    "answer": [
+      "Structured Query Language"
+    ],
+    "explanation": "SQL stands for Structured Query Language and is the standard programming language used to manage, query, and manipulate relational databases.",
+    "category": "SQL",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 2,
+    "question": "Which of the following are SQL relational databases?",
+    "type": "multiple_select",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Oracle Database"
+    ],
+    "answer": [
+      "MySQL",
+      "PostgreSQL",
+      "Oracle Database"
+    ],
+    "explanation": "MySQL, PostgreSQL, and Oracle are relational database management systems (RDBMS) that use SQL. MongoDB is a NoSQL document database.",
+    "category": "SQL",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 3,
+    "question": "Explain the difference between WHERE and HAVING clauses in SQL.",
+    "type": "text",
+    "answer": [
+      "WHERE filters individual rows before any aggregations or GROUP BY are applied, whereas HAVING filters grouped records after aggregation has taken place."
+    ],
+    "explanation": "WHERE is applied to individual rows before grouping, and cannot use aggregate functions directly unless in a subquery. HAVING is applied to filtered aggregated groups after GROUP BY.",
+    "category": "SQL",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 4,
+    "question": "Which SQL clause is used to eliminate duplicate rows from a query result?",
+    "type": "single_select",
+    "options": [
+      "UNIQUE",
+      "DISTINCT",
+      "GROUP BY",
+      "FILTER"
+    ],
+    "answer": [
+      "DISTINCT"
+    ],
+    "explanation": "The SELECT DISTINCT statement is used to return only distinct (different) values from a database table.",
+    "category": "SQL",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 5,
+    "question": "Which of the following are valid SQL aggregate functions?",
+    "type": "multiple_select",
+    "options": [
+      "COUNT()",
+      "AVG()",
+      "CONCAT()",
+      "SUM()",
+      "MAX()"
+    ],
+    "answer": [
+      "COUNT()",
+      "AVG()",
+      "SUM()",
+      "MAX()"
+    ],
+    "explanation": "COUNT, AVG, SUM, MIN, and MAX are standard SQL aggregate functions. CONCAT is a scalar string function.",
+    "category": "SQL",
+    "difficulty": "Beginner",
+    "marks": 2
+  },
+  {
+    "id": 6,
+    "question": "What is the difference between a PRIMARY KEY and a UNIQUE KEY in SQL?",
+    "type": "text",
+    "answer": [
+      "A table can have only one PRIMARY KEY which cannot accept NULL values, whereas a table can have multiple UNIQUE KEYs and UNIQUE constraints allow NULL values."
+    ],
+    "explanation": "PRIMARY KEY uniquely identifies each record in a table and cannot contain NULL values. UNIQUE constraint ensures all values in a column are distinct, but allows NULL values and multiple unique constraints per table.",
+    "category": "SQL",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 7,
+    "question": "What is a Window Function in SQL and when would you use one?",
+    "type": "text",
+    "answer": [
+      "A Window Function performs calculations across a set of table rows related to the current row without collapsing rows like GROUP BY (e.g., ROW_NUMBER(), RANK(), LEAD(), LAG())."
+    ],
+    "explanation": "Window functions use the OVER() clause to compute cumulative totals, rolling averages, or ranking while maintaining the original row granularity.",
+    "category": "SQL",
+    "difficulty": "Advanced",
+    "marks": 3
+  },
+  {
+    "id": 8,
+    "question": "In JavaScript, which method creates a new array populated with the results of calling a provided function on every element in the calling array?",
+    "type": "single_select",
+    "options": [
+      "forEach()",
+      "map()",
+      "filter()",
+      "reduce()"
+    ],
+    "answer": [
+      "map()"
+    ],
+    "explanation": "Array.prototype.map() creates a new array populated with the results of calling the callback on every element without mutating the original array.",
+    "category": "JavaScript",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 9,
+    "question": "Which of the following are primitive data types in JavaScript?",
+    "type": "multiple_select",
+    "options": [
+      "String",
+      "Number",
+      "BigInt",
+      "Symbol",
+      "Array",
+      "Boolean"
+    ],
+    "answer": [
+      "String",
+      "Number",
+      "BigInt",
+      "Symbol",
+      "Boolean"
+    ],
+    "explanation": "JavaScript has 7 primitive types: string, number, bigint, boolean, undefined, symbol, and null. Array is a special type of Object (reference type).",
+    "category": "JavaScript",
+    "difficulty": "Beginner",
+    "marks": 2
+  },
+  {
+    "id": 10,
+    "question": "Explain closures in JavaScript and provide a practical use case.",
+    "type": "text",
+    "answer": [
+      "A closure is the combination of a function bundled together with references to its surrounding state (lexical environment), allowing an inner function to access variables of its outer enclosing scope even after the outer function has executed."
+    ],
+    "explanation": "Closures allow private variables, function factories, currying, and memoization in JavaScript.",
+    "category": "JavaScript",
+    "difficulty": "Intermediate",
+    "marks": 3
+  },
+  {
+    "id": 11,
+    "question": "What is the output of `typeof null` in JavaScript?",
+    "type": "single_select",
+    "options": [
+      "\"null\"",
+      "\"undefined\"",
+      "\"object\"",
+      "\"number\""
+    ],
+    "answer": [
+      "\"object\""
+    ],
+    "explanation": "In JavaScript, `typeof null === 'object'` due to a historical bug in the original implementation of JS where null was represented with a null pointer value tag.",
+    "category": "JavaScript",
+    "difficulty": "Intermediate",
+    "marks": 1
+  },
+  {
+    "id": 12,
+    "question": "Which methods can be used to handle asynchronous operations in modern JavaScript?",
+    "type": "multiple_select",
+    "options": [
+      "Callbacks",
+      "Promises",
+      "async / await",
+      "Generators",
+      "Synchronous blocking loops"
+    ],
+    "answer": [
+      "Callbacks",
+      "Promises",
+      "async / await",
+      "Generators"
+    ],
+    "explanation": "Callbacks, Promises, async/await, and async Generators are all valid mechanisms for handling asynchronous operations in JavaScript.",
+    "category": "JavaScript",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 13,
+    "question": "Explain the Event Loop in JavaScript and how microtasks differ from macrotasks.",
+    "type": "text",
+    "answer": [
+      "The Event Loop coordinates code execution, events, and message handling. Microtasks (Promise callbacks, queueMicrotask) execute immediately after the current synchronous script and before rendering or the next macrotask (setTimeout, setInterval, I/O)."
+    ],
+    "explanation": "Microtasks have higher priority than macrotasks; the microtask queue is fully drained before the browser picks the next macrotask from the task queue.",
+    "category": "JavaScript",
+    "difficulty": "Advanced",
+    "marks": 3
+  },
+  {
+    "id": 14,
+    "question": "In React, which hook is used to manage local state in a functional component?",
+    "type": "single_select",
+    "options": [
+      "useEffect",
+      "useContext",
+      "useState",
+      "useMemo"
+    ],
+    "answer": [
+      "useState"
+    ],
+    "explanation": "useState is the primary React Hook used to declare and update local state variables in functional components.",
+    "category": "React",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 15,
+    "question": "Which of the following are built-in standard React hooks?",
+    "type": "multiple_select",
+    "options": [
+      "useEffect",
+      "useReducer",
+      "useCallback",
+      "useRef",
+      "useDatabase"
+    ],
+    "answer": [
+      "useEffect",
+      "useReducer",
+      "useCallback",
+      "useRef"
+    ],
+    "explanation": "useEffect, useReducer, useCallback, and useRef are official standard React hooks. useDatabase is not a standard built-in React hook.",
+    "category": "React",
+    "difficulty": "Beginner",
+    "marks": 2
+  },
+  {
+    "id": 16,
+    "question": "Explain the difference between `useMemo` and `useCallback` in React.",
+    "type": "text",
+    "answer": [
+      "useMemo caches the calculated result value of a function between re-renders, while useCallback caches the function definition itself to prevent unnecessary re-creations."
+    ],
+    "explanation": "useCallback(fn, deps) is equivalent to useMemo(() => fn, deps). useMemo is for expensive computed values, while useCallback is for stable function references passed to child components.",
+    "category": "React",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 17,
+    "question": "What is the purpose of React's Virtual DOM?",
+    "type": "single_select",
+    "options": [
+      "To directly speed up browser rendering engines",
+      "To minimize expensive direct DOM manipulations through reconciliation and batching",
+      "To store data securely on the client machine",
+      "To replace HTML completely"
+    ],
+    "answer": [
+      "To minimize expensive direct DOM manipulations through reconciliation and batching"
+    ],
+    "explanation": "React uses a Virtual DOM (lightweight in-memory representation) to diff changes with the previous render and update only the necessary real DOM nodes efficiently.",
+    "category": "React",
+    "difficulty": "Intermediate",
+    "marks": 1
+  },
+  {
+    "id": 18,
+    "question": "What are React Server Components (RSC) and how do they differ from Client Components?",
+    "type": "text",
+    "answer": [
+      "React Server Components render exclusively on the server, have zero bundle size on the client, and can directly access databases and server resources, while Client Components render on client (and pre-render on server) with interactive hooks like useState and event listeners."
+    ],
+    "explanation": "RSCs execute only on the server, eliminating dependencies from the JavaScript bundle. Client Components require the 'use client' directive for browser interactivity.",
+    "category": "React",
+    "difficulty": "Advanced",
+    "marks": 3
+  },
+  {
+    "id": 19,
+    "question": "What is a Pivot Table in Microsoft Excel?",
+    "type": "text",
+    "answer": [
+      "A Pivot Table is an interactive Excel tool used to rapidly summarize, reorganize, aggregate, and analyze large datasets without writing complex formulas."
+    ],
+    "explanation": "Pivot Tables allow dragging and dropping fields into rows, columns, values, and filters to group and summarize data with sum, count, average, and percentages.",
+    "category": "Excel",
+    "difficulty": "Beginner",
+    "marks": 2
+  },
+  {
+    "id": 20,
+    "question": "Which modern Excel formula replaces both VLOOKUP and HLOOKUP, allowing lookups to the left and right?",
+    "type": "single_select",
+    "options": [
+      "INDEX / MATCH",
+      "XLOOKUP",
+      "LOOKUP_NEW",
+      "SEARCH_GRID"
+    ],
+    "answer": [
+      "XLOOKUP"
+    ],
+    "explanation": "XLOOKUP was introduced in Excel to simplify lookups, search both vertically and horizontally, search left or right, and default to exact match without column index numbers.",
+    "category": "Excel",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 21,
+    "question": "Which of the following are valid dynamic array formulas in modern Excel?",
+    "type": "multiple_select",
+    "options": [
+      "FILTER()",
+      "UNIQUE()",
+      "SORT()",
+      "SEQUENCE()",
+      "VLOOKUP_ARRAY()"
+    ],
+    "answer": [
+      "FILTER()",
+      "UNIQUE()",
+      "SORT()",
+      "SEQUENCE()"
+    ],
+    "explanation": "FILTER, UNIQUE, SORT, and SEQUENCE are native dynamic array formulas introduced in modern Excel that spill results automatically into adjacent cells.",
+    "category": "Excel",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 22,
+    "question": "Explain the difference between absolute ($A$1) and relative (A1) cell references in Excel.",
+    "type": "text",
+    "answer": [
+      "Relative references (A1) adjust automatically when a formula is copied to another cell, whereas absolute references ($A$1) remain locked to that specific row and column."
+    ],
+    "explanation": "The dollar sign ($) locks the column ($A) or row ($1), preventing it from changing when formulas are autofilled or copied across cells.",
+    "category": "Excel",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 23,
+    "question": "In Python, which built-in data type is mutable?",
+    "type": "single_select",
+    "options": [
+      "tuple",
+      "list",
+      "str",
+      "int"
+    ],
+    "answer": [
+      "list"
+    ],
+    "explanation": "In Python, lists, dictionaries, and sets are mutable (they can be modified in-place). Tuples, strings, integers, and floats are immutable.",
+    "category": "Python",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 24,
+    "question": "Which of the following are valid dictionary methods in Python?",
+    "type": "multiple_select",
+    "options": [
+      "keys()",
+      "values()",
+      "items()",
+      "get()",
+      "append()"
+    ],
+    "answer": [
+      "keys()",
+      "values()",
+      "items()",
+      "get()"
+    ],
+    "explanation": "keys(), values(), items(), and get() are standard dictionary methods. append() is a list method.",
+    "category": "Python",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 25,
+    "question": "What is the difference between `is` and `==` in Python?",
+    "type": "text",
+    "answer": [
+      "== checks for equality of values, whereas `is` checks for identity (whether both variables point to the exact same object in memory)."
+    ],
+    "explanation": "`==` invokes the `__eq__()` method to compare values, while `is` compares memory addresses using object `id()`.",
+    "category": "Python",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 26,
+    "question": "What is a Python Generator and why is `yield` used instead of `return`?",
+    "type": "text",
+    "answer": [
+      "A generator is a function that produces a sequence of values on-the-fly using `yield`, pausing execution and maintaining state between iterations to save memory compared to creating large lists."
+    ],
+    "explanation": "Generators implement the iterator protocol lazily, evaluating items only when requested via `next()` or loops, providing high memory efficiency.",
+    "category": "Python",
+    "difficulty": "Advanced",
+    "marks": 3
+  },
+  {
+    "id": 27,
+    "question": "What is DAX in Microsoft Power BI?",
+    "type": "single_select",
+    "options": [
+      "Data Analysis Expressions, a formula language used to create custom calculations in Power BI, Excel Power Pivot, and SSAS",
+      "Dynamic Automation XML, a file format used to export Power BI visuals",
+      "Database Access Extension, a connector for relational databases",
+      "Dashboard Analytics eXchange, a cloud sharing protocol"
+    ],
+    "answer": [
+      "Data Analysis Expressions, a formula language used to create custom calculations in Power BI, Excel Power Pivot, and SSAS"
+    ],
+    "explanation": "DAX stands for Data Analysis Expressions and is used to define calculated columns, measures, and custom tables in Power BI.",
+    "category": "Power BI",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 28,
+    "question": "Which of the following are primary components of Microsoft Power BI?",
+    "type": "multiple_select",
+    "options": [
+      "Power BI Desktop",
+      "Power BI Service (Cloud)",
+      "Power Query",
+      "Power BI Mobile",
+      "Power Word"
+    ],
+    "answer": [
+      "Power BI Desktop",
+      "Power BI Service (Cloud)",
+      "Power Query",
+      "Power BI Mobile"
+    ],
+    "explanation": "The core Power BI ecosystem consists of Power BI Desktop for authoring, Power BI Service for cloud publishing, Power Query for ETL, and Power BI Mobile for viewing reports.",
+    "category": "Power BI",
+    "difficulty": "Beginner",
+    "marks": 2
+  },
+  {
+    "id": 29,
+    "question": "Explain the difference between a Calculated Column and a Measure in Power BI DAX.",
+    "type": "text",
+    "answer": [
+      "A Calculated Column evaluates row by row during data refresh and consumes storage memory, whereas a Measure evaluates dynamically at query time based on visual filter context without consuming storage."
+    ],
+    "explanation": "Calculated columns have row context and persist in RAM. Measures have filter context and compute on the fly as users interact with slicers and charts.",
+    "category": "Power BI",
+    "difficulty": "Intermediate",
+    "marks": 2
+  },
+  {
+    "id": 30,
+    "question": "What is the difference between Posts and Pages in WordPress?",
+    "type": "text",
+    "answer": [
+      "Posts are time-sensitive, chronological blog entries organized by categories and tags with author archives and comments, while Pages are static, hierarchical content like 'About Us' or 'Contact' without tags or dates."
+    ],
+    "explanation": "Posts are designed for dynamic publishing with RSS feeds and date archives. Pages represent timeless structural website pages.",
+    "category": "WordPress",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 31,
+    "question": "Which file is the main configuration file in a WordPress installation?",
+    "type": "single_select",
+    "options": [
+      "wp-config.php",
+      "index.php",
+      "functions.php",
+      "wp-settings.php"
+    ],
+    "answer": [
+      "wp-config.php"
+    ],
+    "explanation": "wp-config.php contains the core database connection settings, table prefix, authentication keys/salts, and developer debug flags for WordPress.",
+    "category": "WordPress",
+    "difficulty": "Beginner",
+    "marks": 1
+  },
+  {
+    "id": 32,
+    "question": "Which of the following are valid WordPress hook types used in plugin and theme development?",
+    "type": "multiple_select",
+    "options": [
+      "Actions (add_action)",
+      "Filters (add_filter)",
+      "Triggers (add_trigger)",
+      "Mutators (add_mutator)"
+    ],
+    "answer": [
+      "Actions (add_action)",
+      "Filters (add_filter)"
+    ],
+    "explanation": "WordPress provides two types of hooks: Action Hooks (to insert custom code at specific lifecycle events) and Filter Hooks (to modify data before rendering or saving).",
+    "category": "WordPress",
+    "difficulty": "Intermediate",
+    "marks": 2
+  }
+]

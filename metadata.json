@@ -1,0 +1,6 @@
+{
+  "name": "CB Academy – Interview Question App",
+  "description": "A professional frontend interview question and answer practice web application with customizable filters, timed assessments, and comprehensive review.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
